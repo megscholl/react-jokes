@@ -7,7 +7,7 @@ function JokeSetup(props) {
         <Card body inverse style={{ backgroundColor: '#85144b', borderColor: '#85144b' }}>
         {props.jokeLoaded ?
            <span>
-              <CardTitle>Joke About {props.jokeType.charAt(0).toUpperCase() + props.jokeType.slice(1)}</CardTitle>
+              <CardTitle>Topic: {props.jokeType.charAt(0).toUpperCase() + props.jokeType.slice(1)}</CardTitle>
               {/* props.jokeType is taking the first letter of the joke and making it uppercase */}
               <CardText>{props.jokeSetup}</CardText>
               {/* <Button color="info" onClick={props.showClicked}>TELL ME</Button> */}
